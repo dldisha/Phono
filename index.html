@@ -1,0 +1,70 @@
+<html>
+
+	<head>
+		<title>Phono</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+ 
+ 	<body>
+
+ 		<div class="home">
+			<div class="heading">
+				<p class="line anim-typewriter">Phono - your personal phone directory</p>
+			</div>
+	    </div>
+
+		<div class="mainpg">
+			<br><br>
+			<button id="formButton" onclick="myFunction()">Add Contact</button>
+
+			<form action="" name="registration" id="contacts-form">
+
+
+    			<div class="item text" id="name"> 
+        			<b>First Name:</b>
+        			<div class="field"><input type="text" name="first_name" required="true" /></div>
+    			</div>
+    			<br><br>
+    		
+    			<div class="item text" id="name">
+        			<b>Last Name:</b>
+        			<div class="field"><input type="text" name="last_name" /></div>
+    			</div>
+    			<br><br>
+    
+    			<div class="item text" id="phone">
+        			<b>Phone No. :</b>
+        			<p>(Format: xxxx-xxx-xxxx)</p>
+        			<div class="field"><input type="tel" pattern="^\d{4}-\d{3}-\d{4}$" required type="text" name="phone" /></div> 
+    			</div>
+    			<br><br>
+    
+    			<div class="button-wrapper">
+        		
+        			<div class="item button">
+            			<div class="field" id="cancel"><input type="button" id="contacts-op-discard" value="Cancel" /></div>
+       		 		</div>
+        		
+        			<div class="item button button-default">
+            			<div class="field" id="submit"><input type="submit" id="contacts-op-save" value="Submit" /></div>
+        			</div>
+    			</div>
+    			<input type="hidden" name="id_entry" value="0" />
+			</form>
+
+			<table id="contacts-table">
+    			<tr id="contacts-head">
+        			<th>ID</th>
+        			<th>First name</th>
+        			<th>Last name</th>
+        			<th>Phone Number</th>
+        			<th>Actions</th>
+    			</tr>
+			</table>
+		</div>
+		
+		<script src="script/script_tabel.js"></script>
+		<script src="script/script_validation.js"></script>
+
+	</body>
+</html>
