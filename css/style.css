@@ -79,7 +79,6 @@ form{
 }
 
 #formButton{
-
   border-radius: 28px;
   font-family: Arial;
   color: #ffffff;
@@ -88,8 +87,14 @@ form{
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   margin:20px;
- 
+ }
+
+@media only screen and (max-width: 600px) {
+   #formButton{
+   	margin-top: 300px;
+   }
 }
+
 
 #formButton:hover{
   background: #3cb0fd;
@@ -111,7 +116,8 @@ p{
     color: red;
 }
 
-#contacts-table { 
+#contacts-table {
+    margin-top: 30px; 
 	justify-content: center;
 	border-collapse: collapse; 
 }
