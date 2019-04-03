@@ -17,6 +17,8 @@
 		<div class="mainpg">
 			<br><br><br><br><br>
 			<button id="formButton" onclick="myFunction()">Add Contact</button>
+			<button id="formButton" onclick="search()">Search Contact</button>
+
 
 			<form action="" name="registration" id="contacts-form">
 
@@ -52,6 +54,24 @@
     			</div>
     			<input type="hidden" name="id_entry" value="0" />
 			</form>
+
+
+			
+ 
+   
+    <form id="search-form" action="#">
+        <div id="results">
+          
+      </div>
+        <div>
+            <label>
+                <input type="text" name="search" id="search" placeholder="Enter name of contact" />
+            </label>
+        </div>
+                <input type="submit" value="Submit" />
+    </form>
+
+		
 
 			<table id="contacts-table">
     			<tr id="contacts-head">
