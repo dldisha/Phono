@@ -14,14 +14,14 @@
 	    </div>
 
 		<div class="mainpg">
-			<br><br>
+			<br><br><br><br>
 			<button id="formButton" onclick="myFunction()">Add Contact</button>
 
 			<form action="" name="registration" id="contacts-form">
 
 
     			<div class="item text" id="name"> 
-        			<b>First Name:</b>
+        			<b>First Name:<span class="red-star">*</span></b>
         			<div class="field"><input type="text" name="first_name" required="true" /></div>
     			</div>
     			<br><br>
@@ -33,7 +33,7 @@
     			<br><br>
     
     			<div class="item text" id="phone">
-        			<b>Phone No. :</b>
+        			<b>Phone No. :<span class="red-star">*</span></b>
         			<p>(Format: xxxx-xxx-xxxx)</p>
         			<div class="field"><input type="tel" pattern="^\d{4}-\d{3}-\d{4}$" required type="text" name="phone" /></div> 
     			</div>
